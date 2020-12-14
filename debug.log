@@ -1,0 +1,61 @@
+2020-12-08 08:13:56,948  get_vlans  DEBUG: getting all vlans
+2020-12-08 08:13:57,004  get_vlans  DEBUG: vlans fetched successully
+2020-12-08 08:14:00,705  vlan_info  DEBUG: start sending 'show vlan brief'
+2020-12-08 08:14:01,863  vlan_info  DEBUG: parsing 'show vlan brief' string to python datatypes
+2020-12-08 08:14:01,863  vlan_info  DEBUG: 
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    
+100  mgmt                             active    Po11, Eth1/1, Eth1/2
+101  prod                             active    Po11, Eth1/1, Eth1/2
+102  dev                              active    Po11, Eth1/1, Eth1/2
+103  test                             active    Po11, Eth1/1, Eth1/2
+104  security                         active    Po11, Eth1/1, Eth1/2
+105  iot                              active    Po11, Eth1/1, Eth1/2
+400  vlan_400                         active    
+
+
+2020-12-08 08:14:01,866  vlan_info  DEBUG: fetching vlan description
+2020-12-08 08:14:01,867  vlan_info  DEBUG: start running 'show interface vlan 1'
+2020-12-08 08:14:03,344  vlan_info  DEBUG: successfully completed running 'show interface vlan 1'
+2020-12-08 08:14:03,346  vlan_info  DEBUG: start running 'show interface vlan 100'
+2020-12-08 08:14:04,563  vlan_info  DEBUG: successfully completed running 'show interface vlan 100'
+2020-12-08 08:14:04,564  vlan_info  DEBUG: start running 'show interface vlan 101'
+2020-12-08 08:14:05,965  vlan_info  DEBUG: successfully completed running 'show interface vlan 101'
+2020-12-08 08:14:05,966  vlan_info  DEBUG: start running 'show interface vlan 102'
+2020-12-08 08:14:07,217  vlan_info  DEBUG: successfully completed running 'show interface vlan 102'
+2020-12-08 08:14:07,217  vlan_info  DEBUG: start running 'show interface vlan 103'
+2020-12-08 08:14:08,406  vlan_info  DEBUG: successfully completed running 'show interface vlan 103'
+2020-12-08 08:14:08,406  vlan_info  DEBUG: start running 'show interface vlan 104'
+2020-12-08 08:14:09,613  vlan_info  DEBUG: successfully completed running 'show interface vlan 104'
+2020-12-08 08:14:09,613  vlan_info  DEBUG: start running 'show interface vlan 105'
+2020-12-08 08:14:10,830  vlan_info  DEBUG: successfully completed running 'show interface vlan 105'
+2020-12-08 08:14:10,831  vlan_info  DEBUG: start running 'show interface vlan 400'
+2020-12-08 08:14:12,005  vlan_info  DEBUG: successfully completed running 'show interface vlan 400'
+2020-12-08 08:14:12,006  update_entries  DEBUG: Vlan entries update requested
+2020-12-08 08:14:12,009  update_entries  DEBUG: Vlan 1 not found in db. Insertion beginning with data from switch
+2020-12-08 08:14:12,012  update_entries  DEBUG: Vlan 1 insertion to db completed successfully
+2020-12-08 08:14:12,012  update_entries  DEBUG: Vlan 100 not found in db. Insertion beginning with data from switch
+2020-12-08 08:14:12,013  update_entries  DEBUG: Vlan 100 insertion to db completed successfully
+2020-12-08 08:14:12,013  update_entries  DEBUG: Vlan 101 not found in db. Insertion beginning with data from switch
+2020-12-08 08:14:12,014  update_entries  DEBUG: Vlan 101 insertion to db completed successfully
+2020-12-08 08:14:12,014  update_entries  DEBUG: Vlan 102 not found in db. Insertion beginning with data from switch
+2020-12-08 08:14:12,016  update_entries  DEBUG: Vlan 102 insertion to db completed successfully
+2020-12-08 08:14:12,016  update_entries  DEBUG: Vlan 103 not found in db. Insertion beginning with data from switch
+2020-12-08 08:14:12,017  update_entries  DEBUG: Vlan 103 insertion to db completed successfully
+2020-12-08 08:14:12,017  update_entries  DEBUG: Vlan 104 not found in db. Insertion beginning with data from switch
+2020-12-08 08:14:12,018  update_entries  DEBUG: Vlan 104 insertion to db completed successfully
+2020-12-08 08:14:12,018  update_entries  DEBUG: Vlan 105 not found in db. Insertion beginning with data from switch
+2020-12-08 08:14:12,019  update_entries  DEBUG: Vlan 105 insertion to db completed successfully
+2020-12-08 08:14:12,019  update_entries  DEBUG: Vlan 400 not found in db. Insertion beginning with data from switch
+2020-12-08 08:14:12,020  update_entries  DEBUG: Vlan 400 insertion to db completed successfully
+2020-12-08 08:14:12,025  get_vlans  DEBUG: getting all vlans
+2020-12-08 08:14:12,025  get_vlans  DEBUG: getting all vlans
+2020-12-08 08:14:12,027  get_vlans  DEBUG: vlans fetched successully
+2020-12-08 08:14:12,027  get_vlans  DEBUG: vlans fetched successully
+2020-12-08 08:19:08,690  get_vlans  DEBUG: getting all vlans
+2020-12-08 08:19:08,780  get_vlans  DEBUG: vlans fetched successully
+2020-12-08 10:25:47,752  get_vlans  DEBUG: getting all vlans
+2020-12-08 10:25:47,809  get_vlans  DEBUG: vlans fetched successully
+2020-12-09 21:27:29,971  get_vlans  DEBUG: getting all vlans
+2020-12-09 21:27:30,739  get_vlans  DEBUG: vlans fetched successully

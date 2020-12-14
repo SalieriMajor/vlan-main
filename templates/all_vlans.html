@@ -1,0 +1,27 @@
+
+
+<a href="{{ url_for('update_vlans') }}">Sync</a>
+<br>
+<a href="{{ url_for('add_vlan') }}">Add New Vlan</a> <i>[ After adding a new vlan, click update for the state to also be updated ]</i>
+<br>
+
+<TABLE border="2">
+    <TR>
+        <TH>VLAN ID</TH>
+        <TH>VLAN NAME</TH>
+        <TH>VLAN DESCRIPTION</TH>
+        <TH>VLAN STATE</TH>
+    </TR>
+
+    {% for vlan in all_vlans %}
+        <TR>
+            <TD>{{ vlan.id }}</TD>
+            <TD>{{ vlan.name }}</TD>
+            <TD>{{ vlan.description }}</TD>
+            <TD>{{ vlan.state }}</TD>
+            {% if vlan.id != 1 %}
+                <TD><a href="{{ url_for('delete_vlan', vlan_id=vlan.id) }}" style="color: red;">Delete</a></TD>
+            {% endif %}
+        </TR>
+    {% endfor %}
+</TABLE>

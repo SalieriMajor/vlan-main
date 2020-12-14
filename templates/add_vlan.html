@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Vlan</title>
+</head>
+<body>
+    <form method="POST" action="{{ url_for('add_vlan') }}">
+        <input type="number" placeholder="vlan id" min="2" name="vlan_id"/><br>
+        <input type="text" placeholder="vlan name" name="vlan_name"/><br>
+        <textarea placeholder="vlan description" name="vlan_description"></textarea><br>
+        <input type="submit" value="CREATE VLAN">
+    </form>
+</body>
+</html>
